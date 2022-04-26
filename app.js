@@ -7,4 +7,17 @@ const special_characters = "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
 // Function
 function generatePassword() {
     var characters = capital_alphabets + small_alphabets + numbers + special_characters
+    var password = "";
+    passwordLength = parseInt(form.passwordLength.value);
+
+    // validate if passwordLength is a number
+    if (isNaN(passwordLength)) {
+        alert("Please enter a valid number")
+    }
+
+    // passwordLength should be between 6 and 16
+    if (passwordLength < 6 || passwordLength > 16) {
+        alert("Please enter a number between 6 and 16 inclusive")
+    }
+    
 }
