@@ -14,11 +14,13 @@ function generatePassword() {
     // validate if passwordLength is a number
     if (isNaN(passwordLength)) {
         alert("Please enter a valid number")
+        return
     }
 
     // passwordLength should be between 6 and 16
     if (passwordLength < 6 || passwordLength > 16) {
         alert("Please enter a number between 6 and 16 inclusive")
+        return
     }
 
     for (var i = 0; i < passwordLength; i++) {
