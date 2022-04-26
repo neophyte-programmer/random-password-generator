@@ -19,5 +19,10 @@ function generatePassword() {
     if (passwordLength < 6 || passwordLength > 16) {
         alert("Please enter a number between 6 and 16 inclusive")
     }
-    
+
+    for (var i = 0; i < passwordLength; i++) {
+        password += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+
+    document.getElementById("password").value = password; 
 }
