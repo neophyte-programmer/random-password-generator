@@ -6,6 +6,7 @@ const special_characters = "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
 
 // Function
 function generatePassword() {
+    // combining characters
     var characters = capital_alphabets + small_alphabets + numbers + special_characters
     var password = "";
     passwordLength = parseInt(form.passwordLength.value);
